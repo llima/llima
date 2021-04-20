@@ -24,4 +24,4 @@
 </a>
 </p>
 
-<img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=llima" />
+<img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=llima&theme=default" />
