@@ -1,13 +1,5 @@
 <h1>Hello World ! </h1> 
 
-### Analytics
-
-<p align="left">
-<a href="https://github.com/llima">
-  <img height="167px" src="https://github-readme-streak-stats.herokuapp.com/?user=llima"/>
-  <img height="167px" src="https://github-readme-stats.vercel.app/api/?username=llima&count_private=true&show_icons=true"/>
-</a>
-</p>
 
 ### Certifications
 
@@ -22,3 +14,14 @@
 <a href="https://www.credly.com/badges/fb069346-f322-4bae-867a-5683d35610b8/public_url">
   <img src="https://images.credly.com/size/220x220/images/c3ab66f8-5d59-4afa-a6c2-0ba30a1989ca/CERT-Expert-DevOps-Engineer-600x600.png" alt="Microsoft Certified: DevOps Engineer Expert" title="Microsoft Certified: DevOps Engineer Expert" width="15%" /> 
 </a> 
+
+### Analytics
+
+<p align="left">
+<a href="https://github.com/llima">
+  <img height="167px" src="https://github-readme-streak-stats.herokuapp.com/?user=llima"/>
+  <img height="167px" src="https://github-readme-stats.vercel.app/api/?username=llima&count_private=true&show_icons=true"/>
+</a>
+</p>
+
+<img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=llima" />
