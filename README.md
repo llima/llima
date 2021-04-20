@@ -26,6 +26,6 @@
 
 <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=llima&theme=vue" />
 
-#### _References: [Statistics](https://github.com/anuraghazra/github-readme-stats) - [Summary Cards](https://github.com/vn7n24fzkq/github-profile-summary-cards)_
+#### _References:_ [Statistics](https://github.com/anuraghazra/github-readme-stats) + [Summary Cards](https://github.com/vn7n24fzkq/github-profile-summary-cards)
 
-#### _[STEP by STEP to create a similar README profile](https://bit.ly/devtoritgithubcreateprofile) ⭐️_
+#### _[STEP by STEP to create a similar README profile]_ (https://bit.ly/devtoritgithubcreateprofile) 
