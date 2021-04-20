@@ -2,7 +2,7 @@
 
 <p>Arquiteto e engenheiro de software experiente, com vasto conhecimento em criação de aplicativos Web e liderança de times ágeis. Por mais de 15 anos tenho liderado o desenvolvimento de diversas aplicações de alta complexidade/escalabilidade em diversas áreas, como aviação, energia e mercado financeiro.</p>
 
-### Certifications
+### Certificações
 
 <a href="https://www.credly.com/badges/9670ab3d-1f38-469d-a674-bdb4f224ef6c/public_url">
   <img src="https://images.credly.com/size/220x220/images/6a254dad-77e5-4e71-8049-94e5c7a15981/azure-fundamentals-600x600.png" alt="Microsoft Certified: Azure Fundamentals" title="Microsoft Certified: Azure Fundamentals" width="15%" /> 
