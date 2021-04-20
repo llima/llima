@@ -15,3 +15,6 @@
   <img src="https://images.credly.com/size/220x220/images/6a254dad-77e5-4e71-8049-94e5c7a15981/azure-fundamentals-600x600.png" alt="Microsoft Certified: Azure Fundamentals" title="Microsoft Certified: Azure Fundamentals" width="15%" /> 
 </a> 
 
+<a href="https://www.credly.com/badges/23455191-a5e2-4a49-8f98-f8147119e6a1/public_url">
+  <img src="https://images.credly.com/size/220x220/images/92e0618b-8002-4868-9e88-794a33aeb3b5/azure-developer-associate-600x600.png" alt="Microsoft Certified: Azure Developer Associate" title="Microsoft Certified: Azure Developer Associate" width="15%" /> 
+</a> 
