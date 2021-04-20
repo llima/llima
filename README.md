@@ -1,5 +1,6 @@
 <h1>Hello World ! </h1> 
 
+<p>Arquiteto e engenheiro de software experiente, com vasto conhecimento em criação de aplicativos Web e liderança de times ágeis. Por mais de 15 anos tenho liderado o desenvolvimento de diversas aplicações de alta complexidade/escalabilidade em diversas áreas, como aviação, energia e mercado financeiro.</p>
 
 ### Certifications
 
