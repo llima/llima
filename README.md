@@ -1,5 +1,4 @@
 <h1>Hello World ! </h1> 
-![Profile Views](http://estruyf-github.azurewebsites.net/api/VisitorHit?user=llima)
 
 ### Analytics
 
