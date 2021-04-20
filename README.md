@@ -7,7 +7,7 @@
 <p align="left">
 <a href="https://github.com/GuillaumeFalourd">
   <img height="180em" src="https://github-readme-stats.vercel.app/api/?username=llima&count_private=true&show_icons=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=llima&layout=compact&langs_count=8"/>
+  <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=llima"/>
 </a>
 </p>
 
