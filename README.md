@@ -4,8 +4,8 @@
 
 <p align="left">
 <a href="https://github.com/GuillaumeFalourd">
-  <img height="160em" src="https://github-readme-streak-stats.herokuapp.com/?user=llima"/>
-  <img height="160em" src="https://github-readme-stats.vercel.app/api/?username=llima&count_private=true&show_icons=true"/>
+  <img height="170px" src="https://github-readme-streak-stats.herokuapp.com/?user=llima"/>
+  <img height="170px" src="https://github-readme-stats.vercel.app/api/?username=llima&count_private=true&show_icons=true"/>
 </a>
 </p>
 
