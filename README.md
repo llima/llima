@@ -7,7 +7,7 @@
 ### Certifications
 
 <a href="https://www.credly.com/badges/9670ab3d-1f38-469d-a674-bdb4f224ef6c/public_url">
-  <img src="https://images.credly.com/size/220x220/images/6a254dad-77e5-4e71-8049-94e5c7a15981/azure-fundamentals-600x600.png" alt="Microsoft Certified: Azure Fundamentals" title="Microsoft Certified: Azure Fundamentals" width="15%" /> 
+  <img src="https://miro.medium.com/max/600/0*1CAzxuyWO_3vQ8sI.png" alt="Microsoft Certified: Azure Fundamentals" title="Microsoft Certified: Azure Fundamentals" width="124px" /> 
 </a> 
 
 <a href="https://www.credly.com/badges/23455191-a5e2-4a49-8f98-f8147119e6a1/public_url">
