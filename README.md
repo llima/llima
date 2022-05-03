@@ -18,6 +18,10 @@
   <img src="https://images.credly.com/size/220x220/images/c3ab66f8-5d59-4afa-a6c2-0ba30a1989ca/CERT-Expert-DevOps-Engineer-600x600.png" alt="Microsoft Certified: DevOps Engineer Expert" title="Microsoft Certified: DevOps Engineer Expert" width="130px" /> 
 </a> 
 
+<a href="https://www.credly.com/badges/48eecd86-9640-4cac-a759-18d9c4aa3145/public_url">
+  <img src="https://images.credly.com/size/220x220/images/70eb1e3f-d4de-4377-a062-b20fb29594ea/azure-data-fundamentals-600x600.png" alt="Microsoft Certified: DevOps Engineer Expert" title="Microsoft Certified: Azure Data Fundamentals" width="130px" /> 
+</a> 
+
 ### Analytics
 
 <p align="left">
