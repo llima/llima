@@ -28,8 +28,7 @@
   <a href="https://github.com/llima">
     <img height="165px" src="https://github-readme-streak-stats.herokuapp.com/?user=llima"/>
     <img height="164px" src="https://github-readme-stats.vercel.app/api/?username=llima&count_private=true&show_icons=true"/>
-    ![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=wferreiracosta&theme=transparent)
-    ![](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=wferreiracosta&theme=transparent)
+    <img height="164px" src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=llima&theme=transparent)"/>
   </a>
 </p>
 
