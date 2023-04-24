@@ -25,10 +25,12 @@
 ### Analytics
 
 <p align="left">
-<a href="https://github.com/llima">
-  <img height="165px" src="https://github-readme-streak-stats.herokuapp.com/?user=llima"/>
-  <img height="164px" src="https://github-readme-stats.vercel.app/api/?username=llima&count_private=true&show_icons=true"/>
-</a>
+  <a href="https://github.com/llima">
+    <img height="165px" src="https://github-readme-streak-stats.herokuapp.com/?user=llima"/>
+    <img height="164px" src="https://github-readme-stats.vercel.app/api/?username=llima&count_private=true&show_icons=true"/>
+    ![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=wferreiracosta&theme=transparent)
+    ![](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=wferreiracosta&theme=transparent)
+  </a>
 </p>
 
 <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=llima&theme=vue" />
