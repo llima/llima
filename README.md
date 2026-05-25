@@ -1,8 +1,19 @@
-<h1>Hello World ! </h1> 
+# 👋 Hi, I'm Leandro Lima
 
-<p>
-  Experienced solutions architect and software engineer, with vast experience building web apps and leading agile teams. For 15 years I have led the development of several applications of high complexity/scalability in various areas such as aviation, energy and financial market.
-</p>
+🚀 **Founder & Tech Innovation Leader at Nexgs | Solutions Architect | Software Engineer**
+
+With 17+ years of experience, I specialize in digital transformation, cloud architecture, and building high-performance applications. I've led technical teams and driven innovation at major companies in fintech, aviation, and energy sectors.
+
+### 💼 What I do
+- Cloud Architecture & Migration (AWS, Azure)
+- Software Architecture & Development
+- Technical Leadership & Agile Teams
+- Digital Transformation & Process Optimization
+
+### 🏢 Previous experiences include
+- Cloud Solutions Architecture Leader at Banco Original
+- R&D Leader at XP Inc. (Eleven Financial)
+- Software Architect & Tech Lead at GOL Airlines
 
 ### Certifications
 
