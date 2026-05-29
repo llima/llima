@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Leandro Lima
+# 👋 Hi, I'm Luiz Lima
 
 🚀 **Founder & Tech Innovation Leader at Nexgs | Solutions Architect | Software Engineer**
 
