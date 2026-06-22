@@ -37,8 +37,8 @@ With 17+ years of experience, I specialize in digital transformation, cloud arch
 
 <p align="left">
   <a href="https://github.com/llima">
-    <img height="165px" src="https://github-readme-streak-stats.herokuapp.com/?user=llima"/>
-    <img height="164px" src="https://github-readme-stats.vercel.app/api/?username=llima&count_private=true&show_icons=true"/>
+    <img height="165px" src="https://streak-stats.demolab.com/?user=llima&theme=default"/>
+    <img height="164px" src="https://github-readme-stats.vercel.app/api?username=llima&count_private=true&show_icons=true&include_all_commits=true"/>
   </a>
 </p>
 
