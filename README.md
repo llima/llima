@@ -33,16 +33,21 @@ With 17+ years of experience, I specialize in digital transformation, cloud arch
   <img src="https://images.credly.com/size/220x220/images/70eb1e3f-d4de-4377-a062-b20fb29594ea/azure-data-fundamentals-600x600.png" alt="Microsoft Certified: DevOps Engineer Expert" title="Microsoft Certified: Azure Data Fundamentals" width="130px" /> 
 </a> 
 
-### Analytics
+### 📊 Analytics
 
-<p align="left">
-  <a href="https://github.com/llima">
-    <img height="165px" src="https://streak-stats.demolab.com/?user=llima&theme=default"/>
-    <img height="164px" src="https://github-readme-stats.vercel.app/api?username=llima&count_private=true&show_icons=true&include_all_commits=true"/>
-  </a>
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=llima&theme=github_dark" />
 </p>
 
-<img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=llima&theme=vue" />
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=llima&theme=github_dark" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=llima&theme=github_dark" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=llima&theme=github_dark" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=llima&theme=github_dark&utcOffset=-3" />
+</p>
 
 #### _References:_ [Statistics](https://github.com/anuraghazra/github-readme-stats) + [Summary Cards](https://github.com/vn7n24fzkq/github-profile-summary-cards)
 
