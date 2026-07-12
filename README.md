@@ -36,6 +36,10 @@ With 17+ years of experience, I specialize in digital transformation, cloud arch
 ### 📊 Analytics
 
 <p align="center">
+  <img src="./github-metrics.svg" alt="GitHub Metrics" />
+</p>
+
+<p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=llima&theme=github_dark" />
 </p>
 
