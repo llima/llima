@@ -28,14 +28,6 @@ jobs:
           # Include private contributions
           base_indepth: yes
           
-          # Important: fetch more repositories and include all affiliations
-          repositories: 200
-          repositories_affiliations: owner, collaborator, organization_member
-          repositories_forks: yes
-          
-          # Important: specify your commit emails for accurate stats
-          commits_authoring: llima, luiz.lima@live.com, luiz.lima@elevenfinancial.com, luiz.dev@hubcred.com.br, luizsan.lima@gmail.com, arquiteto@suno.com.br, luiz.lima@nexgs.com.br, luiz.lima@fingate.com.br, luiz.rsantos@cxmail.com.br, llima@users.noreply.github.com
-          
           # Config
           config_timezone: America/Sao_Paulo
           config_display: large
@@ -48,13 +40,3 @@ jobs:
           # Isometric calendar
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
-          
-          # Top Languages with indepth for private repos
-          plugin_languages: yes
-          plugin_languages_indepth: yes
-          plugin_languages_analysis_timeout: 30
-          plugin_languages_categories: markup, programming
-          plugin_languages_colors: github
-          plugin_languages_ignored: html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot
-          plugin_languages_limit: 8
-          plugin_languages_details: bytes-size, percentage
