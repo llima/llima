@@ -10,6 +10,17 @@ With 17+ years of experience, I specialize in digital transformation, cloud arch
 - Technical Leadership & Agile Teams
 - Digital Transformation & Process Optimization
 
+### 🏢 Nexgs
+
+Founder of [Nexgs](https://nexgs.com.br), a consultancy specialized in digital transformation through:
+
+- 🛠️ Custom Software Development
+- 👥 IT Outsourcing
+- ☁️ Cloud Migration & Architecture (AWS, Azure)
+- ⚡ Development Process Optimization
+
+Delivering high-performance solutions with maximum efficiency.
+
 ### 🏢 Previous experiences include
 - Cloud Solutions Architecture Leader at Banco Original
 - R&D Leader at XP Inc. (Eleven Financial)
