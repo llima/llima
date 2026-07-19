@@ -49,21 +49,3 @@ Delivering high-performance solutions with maximum efficiency.
 <p align="center">
   <img src="./github-metrics.svg" alt="GitHub Metrics" />
 </p>
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=llima&theme=github_dark" />
-</p>
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=llima&theme=github_dark" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=llima&theme=github_dark" />
-</p>
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=llima&theme=github_dark" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=llima&theme=github_dark&utcOffset=-3" />
-</p>
-
-#### _References:_ [Statistics](https://github.com/anuraghazra/github-readme-stats) + [Summary Cards](https://github.com/vn7n24fzkq/github-profile-summary-cards)
-
-#### _[STEP by STEP to create a similar README profile](https://bit.ly/devtoritgithubcreateprofile)_
