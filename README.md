@@ -2,7 +2,7 @@
 
 🚀 **Founder & Tech Innovation Leader at Nexgs | Solutions Architect | Software Engineer**
 
-With 17+ years of experience, I specialize in digital transformation, cloud architecture, and building high-performance applications. I've led technical teams and driven innovation at major companies in fintech, aviation, and energy sectors.
+With 22+ years of experience, I specialize in digital transformation, cloud architecture, and building high-performance applications. I've led technical teams and driven innovation at major companies in fintech, aviation, and energy sectors.
 
 ### 💼 What I do
 - Cloud Architecture & Migration (AWS, Azure)
@@ -25,6 +25,9 @@ Delivering high-performance solutions with maximum efficiency.
 - Cloud Solutions Architecture Leader at Banco Original
 - R&D Leader at XP Inc. (Eleven Financial)
 - Software Architect & Tech Lead at GOL Airlines
+- CTO & Cofounder at Elowin (Gamification social tool)
+- Software Architect at DoMore! Soluções em Produtividade
+- Software Developer at GRUPO SSI Consultoria
 
 ### Certifications
 
