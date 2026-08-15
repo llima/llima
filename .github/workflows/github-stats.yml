@@ -36,13 +36,22 @@ jobs:
       - name: Generate images
         run: |
           cd /tmp/github-stats
-          ./zig-out/bin/github-stats
+          ./zig-out/bin/github-stats || true
         env:
           ACCESS_TOKEN: ${{ secrets.METRICS_TOKEN }}
           EXCLUDE_REPOS: "llima/llima"
           EXCLUDE_PRIVATE: "false"
-          SILENT: "true"
-          MAX_RETRIES: 5
+          SILENT: "false"
+          MAX_RETRIES: 10
+
+      - name: Check if images were generated
+        run: |
+          if [ -f /tmp/github-stats/generated/overview.svg ]; then
+            echo "Images generated successfully"
+          else
+            echo "Failed to generate images"
+            exit 1
+          fi
 
       - name: Copy generated files
         run: |
