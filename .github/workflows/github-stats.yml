@@ -1,0 +1,58 @@
+name: GitHub Stats
+
+on:
+  schedule:
+    # Roda todo domingo às 3h UTC (meia-noite horário de Brasília)
+    - cron: "0 3 * * 0"
+  # Run on push to main
+  push:
+    branches: ["main"]
+  # Allow manual trigger
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Zig
+        uses: mlugg/setup-zig@v2
+        with:
+          version: 0.14.0
+
+      - name: Clone github-stats
+        run: |
+          git clone --depth 1 https://github.com/jstrieb/github-stats.git /tmp/github-stats
+
+      - name: Build github-stats
+        run: |
+          cd /tmp/github-stats
+          zig build
+
+      - name: Generate images
+        run: |
+          cd /tmp/github-stats
+          ./zig-out/bin/github-stats
+        env:
+          ACCESS_TOKEN: ${{ secrets.METRICS_TOKEN }}
+          EXCLUDE_REPOS: "llima/llima"
+          EXCLUDE_PRIVATE: "false"
+          SILENT: "true"
+          MAX_RETRIES: 5
+
+      - name: Copy generated files
+        run: |
+          cp /tmp/github-stats/generated/overview.svg ./generated-overview.svg
+          cp /tmp/github-stats/generated/languages.svg ./generated-languages.svg
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add generated-overview.svg generated-languages.svg
+          git commit -m "Update GitHub stats" || echo "No changes to commit"
+          git push
