@@ -8,32 +8,7 @@ on:
   # Allow manual trigger
   workflow_dispatch:
 
-# Shared across both jobs.
-#
-# WHY repositories_affiliations IS NOT SET HERE (do not re-add organization_member):
-#   The three orgs contain 393 repositories, but only 86 were actually contributed to.
-#   Setting `organization_member` makes the action iterate all 393, which times out the
-#   GitHub GraphQL API ("failed to retrieve 100 repositories, halving batch") and silently
-#   zeroes out every per-repo statistic. Measured regression on 2026-08-15:
-#     lines 121k/66.1k -> 0/0 | stargazers 12 -> 0 | watchers 6 -> 0 | languages -> 0
-#   The default (`owner`) keeps those stats correct. Private work is still counted in the
-#   header/activity totals, which come from the contributions API, not from repo iteration.
-env:
-  # Every identity used to author commits, so per-commit attribution is not missed.
-  COMMITS_AUTHORING: >-
-    llima,
-    llima@users.noreply.github.com,
-    luiz.lima@live.com,
-    luizsan.lima@gmail.com,
-    luiz.lima@nexgs.com.br,
-    luiz.lima@fingate.com.br,
-    luiz.lima@elevenfinancial.com,
-    luiz.dev@hubcred.com.br,
-    arquiteto@suno.com.br,
-    luiz.rsantos@cxmail.com.br
-
 jobs:
-  # Headline numbers: profile, activity totals, calendar, lines of code.
   github-metrics:
     runs-on: ubuntu-latest
     permissions:
@@ -52,7 +27,29 @@ jobs:
 
           base: header, activity, community, repositories, metadata
           base_indepth: yes
-          commits_authoring: ${{ env.COMMITS_AUTHORING }}
+
+          # DO NOT set repositories_affiliations to organization_member.
+          #   The three orgs hold 393 repositories but only 86 were contributed to.
+          #   Iterating all 393 times out the GraphQL API ("failed to retrieve 100
+          #   repositories, halving batch") and silently zeroes every per-repo stat.
+          #   Measured on 2026-08-15: lines 121k/66.1k -> 0/0, stargazers 12 -> 0,
+          #   watchers 6 -> 0, languages -> 0.
+          # The default (owner) keeps those correct. Private work still shows up in
+          # the header/activity/follow-up totals, which come from the contributions
+          # API rather than from repository iteration.
+
+          # Every identity used to author commits, so attribution is not missed.
+          commits_authoring: >-
+            llima,
+            llima@users.noreply.github.com,
+            luiz.lima@live.com,
+            luizsan.lima@gmail.com,
+            luiz.lima@nexgs.com.br,
+            luiz.lima@fingate.com.br,
+            luiz.lima@elevenfinancial.com,
+            luiz.dev@hubcred.com.br,
+            arquiteto@suno.com.br,
+            luiz.rsantos@cxmail.com.br
 
           config_timezone: America/Sao_Paulo
           config_display: large
@@ -62,65 +59,36 @@ jobs:
           plugin_isocalendar_duration: full-year
 
           # Lines of code.
-          # `repositories` section is deliberately omitted: it would print private
-          # client repository names into a public README.
+          # The `repositories` section is deliberately omitted: it prints repository
+          # names, which for this account are private client repositories.
           plugin_lines: yes
           plugin_lines_sections: base, history
           plugin_lines_history_limit: 5
-          # The GitHub stats endpoint returns a cold/empty result on first request.
-          # Re-query after 10s so the numbers are not silently zero.
+          # The GitHub stats endpoint answers the first request from a cold cache and
+          # returns nothing. Re-query after 10s so the totals are not silently zero.
           plugin_lines_delay: 10
 
-  # Secondary render. Kept in a separate job so a failure here cannot blank out the
-  # main SVG above, and separate from it so neither job pushes over the other.
-  github-metrics-extras:
-    runs-on: ubuntu-latest
-    needs: github-metrics
-    permissions:
-      contents: write
-    steps:
-      - uses: lowlighter/metrics@v3.34
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          filename: github-metrics-extras.svg
-          user: llima
-          template: classic
-          committer_branch: ${{ github.ref_name }}
-
-          # Plugins only, no base sections (those are on the main SVG).
-          base: ""
-          commits_authoring: ${{ env.COMMITS_AUTHORING }}
-
-          config_timezone: America/Sao_Paulo
-          config_display: large
-
-          # Issue/PR follow-up. `user` section covers everything authored across
-          # GitHub including private repositories, and needs no repo iteration.
+          # Issue / pull request follow-up.
+          # The `user` section covers everything authored across GitHub, private
+          # repositories included, without iterating repositories. This is where the
+          # private consultancy work becomes visible (758 merged PRs).
           plugin_followup: yes
           plugin_followup_sections: user
           plugin_followup_indepth: yes
 
-          # Account-level highlights, derived from profile data rather than repos.
-          plugin_achievements: yes
-          plugin_achievements_display: compact
-          plugin_achievements_threshold: C
-          plugin_achievements_secrets: yes
-
-          # Recent activity.
-          # visibility MUST stay `public`: the default is `all`, which would print
-          # private client repository names (e.g. "pushed to nexgs-tech/...").
-          plugin_activity: yes
-          plugin_activity_limit: 5
-          plugin_activity_days: 14
-          plugin_activity_visibility: public
-          plugin_activity_timestamps: yes
-
-          # Starred topics
-          plugin_topics: yes
-          plugin_topics_mode: icons
-          plugin_topics_limit: 15
-
-          # plugin_habits is intentionally absent. It crashes on this account with
-          # "Cannot destructure property 'author' of 'undefined'" at
-          # source/plugins/habits/index.mjs:51, because some PushEvents come back
-          # without a payload.commits array. Not fixable from configuration.
+          # ---------------------------------------------------------------------
+          # Plugins deliberately NOT enabled, with the reason. Verified 2026-08-15
+          # against lowlighter/metrics v3.34 — none of these are fixable here.
+          #
+          # plugin_habits, plugin_activity, plugin_code, and the "recently-used"
+          #   section of plugin_languages all read `payload.commits` from the GitHub
+          #   Events API. GitHub no longer populates it: 94 of 94 recent PushEvents
+          #   return commits/size/distinct_size as null. habits crashes at
+          #   habits/index.mjs:51, activity at activity/index.mjs:140.
+          #
+          # plugin_achievements queries Projects (classic) fields, which GitHub has
+          #   sunset. The whole query now resolves to `data: {user: null}`.
+          #
+          # plugin_topics renders empty: it lists starred *topics*, and this account
+          #   has starred repositories but no topics.
+          # ---------------------------------------------------------------------

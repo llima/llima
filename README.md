@@ -52,7 +52,3 @@ Delivering high-performance solutions with maximum efficiency.
 <p align="center">
   <img src="./github-metrics.svg" alt="GitHub Metrics" />
 </p>
-
-<p align="center">
-  <img src="./github-metrics-extras.svg" alt="GitHub Metrics - activity and highlights" />
-</p>
