@@ -39,7 +39,7 @@ jobs:
           ./zig-out/bin/github-stats || true
         env:
           ACCESS_TOKEN: ${{ secrets.METRICS_TOKEN }}
-          EXCLUDE_REPOS: "llima/llima"
+          EXCLUDE_REPOS: "llima/llima,nexgs-tech/Eleven.Project.Multichannel"
           EXCLUDE_PRIVATE: "false"
           SILENT: "false"
           MAX_RETRIES: 10
